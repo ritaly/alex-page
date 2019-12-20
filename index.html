@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Do IT for Alex</title>
+        <meta name="description" content="do IT for Alex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="canonical" href="https://flynerd.pl/alex/" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+        <meta property="og:type" content="article" />
+        <meta property="og:title"  content="Do IT for Alex - razem wygramy z SMA!" />
+        <meta property="og:description" content="Ucz się programowania i wspieraj Alexa w walce z SMA!" />
+        <meta property="og:image" content="https://flynerd.pl/alex/img/do-it-for-alex.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mb-0 h1
+            " href="./">Do IT for Alex</a>
+            <button class="navbar-toggler" type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#events">
+                            Wydarzenia
+                        </a>
+                    </li>
+                    <!--
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#articles">Artykuły</a>
+                    </li> -->
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="./historia.html">O co chodzi?</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="./pomoc.html">Jak pomóc?</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="./kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <a href="https://www.siepomaga.pl/doitforalex" target="_blank" class="btn btn-outline-danger btn-sm">❤️ Wspieraj Alexa!</a>
+            </div>
+        </nav>
+        <header class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h2>Wspieraj z nami Alexa!</h2>
+                    <p class='mt-5'>Alex urodził się z rdzeniowym zanikiem mięśni typu I (SMA I). Pilnie potrzebuje drogiej terapii genowej Zolgensma. Dołącz z nami do największej zbiórki w historii Siepomaga.pl!</p>
+                    <div class="mt-5 pt-3">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-base" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="" id="progressbar">
+                            </div>
+                            <span id="tooltip" class="popOver" data-toggle="tooltip" data-placement="top"
+                            title=""></span>
+                        </div>
+                        <div class="text-center h5 mt-3">
+                            <b id="amount">0</b> zł (cel: <span id="goal"></span> zł)
+                        </div>
+                        <div class="text-center mt-5">
+                            <a class="btn btn-danger main large btn-lg" href="https://www.siepomaga.pl/doitforalex" target="_blank">❤️ Wrzuć do puszki!</a>
+                        </div>
+                        <div class="text-center mt-2">
+                            <a class="small text-secondary" href="./historia.html">Dowiedz się więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 mt-4 prop">
+                    <div class="shape">
+                        <img src="./img/alex.jpg" class="img-fluid" alt="Alex z rodzicami">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="container mt-5 mb-5" id="events">
+            <h3 class="text-center pb-5">Wydarzenia</h3>
+            <div class="row">
+
+                <!--new-->
+                <div class="col-lg-3 cards">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/android-krk.png" alt="Android Kraków">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Android od podstaw</h5>
+                            <p class="card-city">Kraków</p>
+                            <p class="card-data small"><b>styczeń</b> </p>
+                            <a href="#" target="_blank" class="btn btn-outline-secondary disabled">Wkrótce</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/python.jpg" alt="PySzczek">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">PySzczek, Python od podstaw</h5>
+                            <p class="card-city">Szczecin</p>
+                            <p class="card-data small"><b>25.01</b> - godz: 09:00-16:00</p>
+                            <a href="https://www.facebook.com/events/2514494348658274/" target="_blank" class="btn btn-outline-secondary">Wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/django.png" alt="Django Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Insta Clone</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>15.12</b> - godz: 10:00</p>
+                            <a href="https://www.facebook.com/events/469901993652295/" target="_blank" class="btn btn-outline-secondary">Wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/tkiinter.png" alt="Tkinter Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Python + tkinter vol. 2</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>19.12</b> - godz: 18:00</p>
+                            <a href="https://www.facebook.com/events/469901993652295/" target="_blank" class="btn btn-outline-secondary">Wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--old-->
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/tkiinter.png" alt="Tkinter Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Python + tkinter</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>18.12</b> - godz: 18:00</p>
+                            <a href="https://www.facebook.com/events/2678249438887405/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/js-api-pn.png" alt="JavaScript API Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript + API</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>17.12</b> - godz: 17:30</p>
+                            <a href="https://www.facebook.com/events/2656909767855360/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/html-katowice.png" alt="HTML Katowice">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">HTML i CSS od podstaw</h5>
+                            <p class="card-city">Katowice</p>
+                            <p class="card-data small"><b>15.12</b> - godz: 11:30</p>
+                            <a href="https://www.facebook.com/events/660442281152297/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/js-pn.png" alt="JavaScript Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript od podstaw</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>15.12</b> - godz: 10:00</p>
+                            <a href="https://www.facebook.com/events/469901993652295/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/SQL-Krk.jpg" alt="SQL od podstaw">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SQL podstawy</h5>
+                            <p class="card-city">Kraków</p>
+                            <p class="card-data small"><b>14.12</b> - godz. 9:00 - 14:00</p>
+                            <a href="https://www.facebook.com/events/1284116075108194/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/framework.png" alt="Poznan framework">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Framework testowy</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>14.12</b> - godz: 10:00</p>
+                            <a href="https://www.facebook.com/events/548841002571875/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/snake-codeme.jpg" alt="Python / JavaScript">
+                        </div>                     
+                        <div class="card-body">
+                            <h5 class="card-title">Snake .py / .js</h5>
+                            <p class="card-city">Gdańsk</p>
+                            <p class="card-data small"><b>15.12</b> - godz. 10:00</p>
+                            <a href="https://evenea.pl/imprezy/szkolenia/gdansk/codesunday-20-gdansk-237723/" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col-lg-3 cards outdated">
+                            <div class="card">
+                                <div class="event-cover">
+                                    <img class="card-img-top" src="./img/events/awwwsomes.png" alt="Kreatywne kodowanie">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kreatywne kodowanie</h5>
+                                    <p class="card-city">Warszawa</p>
+                                    <p class="card-data small"><b>13.12</b> - godz. 16:00 - 20:00</p>
+                                    <a href="https://www.facebook.com/events/573497756551207/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/test.png" alt="Testowanie Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wstęp do testowania</h5>
+                            <p class="card-city">Poznan</p>
+                            <p class="card-data small"><b>12.12</b> - godz: 17:30</p>
+                            <a href="https://www.facebook.com/events/2728491377207952/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/tkiinter.png" alt="Poznan Tkinter Python">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Python + Tkinter</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>12.12</b> - godz 18:00</p>
+                            <a href="https://www.facebook.com/events/752480768604031/" target="_blank" class="btn btn-outline-secondary">Wydarzenie się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/fb-adds.png" alt="FB adds Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Reklama na FB</h5>
+                            <p class="card-city">Poznan</p>
+                            <p class="card-data small"><b>11.12</b> - godz: 17:30</p>
+                            <a href="https://www.facebook.com/events/346936339511105/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/python-poznan.jpg" alt="Python Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Python w 3h</h5>
+                            <p class="card-city">Poznan</p>
+                            <p class="card-data small"><b>10.12</b> - godz: 17:30</p>
+                            <a href="https://www.facebook.com/events/525980024925005/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/SQL-Wroc.jpg" alt="SQL od podstaw Wrocław">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">SQL podstawy</h5>
+                            <p class="card-city">Wrocław</p>
+                            <p class="card-data small"><b>9.12</b> - godz. 18:00 - 21:00</p>
+                            <a href="https://www.facebook.com/events/547772976012679/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/python-krk.png" alt="Kraków Python od podstaw">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Python od podstaw</h5>
+                            <p class="card-city">Kraków</p>
+                            <p class="card-data small"><b>09.12</b> - godz. 17:00</p>
+                            <a href="https://www.facebook.com/events/2559306104183113/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/js-gdn.png" alt="JavaScript od podstaw Gdańsk">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript od podstaw</h5>
+                            <p class="card-city">Gdańsk</p>
+                            <p class="card-data small"><b>9.12</b> - godz. 17:30 - 20:30</p>
+                            <a href="https://www.facebook.com/events/473288016875626/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="img/events/ux-ui-poznan.jpg" alt="UX i UI Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kawa UX i UI</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>7.12</b> - godz: 10:00</p>
+                            <a href="https://www.facebook.com/events/439134500084548/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/html-pn.png" alt="HTML Poznan">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">HTML i CSS od podstaw</h5>
+                            <p class="card-city">Poznan</p>
+                            <p class="card-data small"><b>7.12</b> - godz: 10:00</p>
+                            <a href="https://www.facebook.com/events/660442281152297/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/html-gdn.png" alt="HTML od podstaw">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">HTML i CSS od podstaw</h5>
+                            <p class="card-city">Gdańsk</p>
+                            <p class="card-data small"><b>02.12</b> - godz.17:30 - 20:30</p>
+                            <a href="https://www.facebook.com/events/431305517530883/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/python-poznan.jpg" alt="Poznan Python od podstaw">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Python od podstaw</h5>
+                            <p class="card-city">Poznań</p>
+                            <p class="card-data small"><b>01.12</b> - godz.10:00 - 18:00</p>
+                            <a href="https://www.facebook.com/events/1374732522694165/" target="_blank" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 cards outdated">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/events/python-wawa.png" alt="Python od podstaw">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Python od podstaw</h5>
+                            <p class="card-city">Warszawa</p>
+                            <p class="card-data small"><b>22.11</b> - godz: 18:00</p>
+                            <a href="https://www.facebook.com/events/2430586190490730/" class="btn btn-outline-secondary">Wydarzenie już się odbyło</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="./pomoc.html" target="_blank" class="btn btn-primary large">Zorganizuj wydarzenie! →</a>
+            </div>
+        </section>
+        
+        <section class="container mt-5 mb-5" id="articles">
+            <h3 class="text-center pb-5">Aktualności</h3>
+            <div class="row">
+                <div class="col-md-4 articles">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/articles/mini-kurs.png" alt="Mini kurs HTML CSS JS">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Mini kurs: HTML / CSS / JS</h5>
+                            <p class="card-text">Do końca listopada możecie zakupić mini kurs od wakeupandcode.pl. Dochód ze sprzedaży, zostanie przeznaczony dla Alexa!</p>
+                            <a href="./mini-kurs.html" target="_blank" class="btn btn-outline-secondary">Czytaj więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 articles">
+                    <div class="card">
+                        <div class="event-cover">
+                            <img class="card-img-top" src="./img/articles/do-it-for-alex.png" alt="Grupa do it for Alex">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Grupa: #doITforAlex<br>
+                            - wydarzenia IT dla Alexa</h5>
+                            <p class="card-text">Nie chcesz przegapić żadnego wydarzenia? O wszystkich kursach i szkoleniach
+                            chcesz wiedzieć w pierwszej kolejnośći?</p>
+                            <a href="https://www.facebook.com/groups/804084760024558/" target="_blank" class="btn btn-outline-secondary">Dołącz na facebooku!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center mt-5">
+                <a href="./blog.html" class="btn btn-primary large">Czytaj więcej →</a>
+            </div> -->
+        </section>
+        <section class="container mt-5 mb-5">
+            <h3 class="text-center pb-5">Wspierają nas:</h3>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <a href="http://www.sages.com.pl/"> <img class="img-fluid supporter" src="./img/partners/sages.png"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://codeme.pl/"><img class="img-fluid supporter" src="./img/partners/codeme.png"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://madkom.pl/"><img class="img-fluid supporter" src="./img/partners/madkom.jpg"></a>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5 mb-5">
+            <h3 class="text-center pb-5">Patronat medialny:</h3>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <a href="https://www.wakeupandcode.pl/"> <img class="img-fluid supporter" src="./img/partners/wakeupandcode.png"></a>
+                </div>
+            </div>
+        </section>
+         
+        
+        <footer class="p-3">
+            <p class="text-right">#DoITforAlex 2019 | flynerd.pl</p> 
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
